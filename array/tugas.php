@@ -50,12 +50,12 @@
 <?php
 
     if(isset($_POST['nasi'])){
-        $nasi       = $_POST['nasi'];
-        $jml_nasi   = $_POST['jumlah_nasi'];
-        $lauk       = $_POST['lauk'];
-        $jml_lauk   = $_POST['jumlah_lauk'];
-        $minumans    = $_POST['minuman'];
-        $jml_minuman    = $_POST['jumlah_minuman'];
+        $nasi               = $_POST['nasi'];
+        $jumlah_nasi        = $_POST['jumlah_nasi'];
+        $lauk               = $_POST['lauk'];
+        $jumlah_lauk        = $_POST['jumlah_lauk'];
+        $minumans           = $_POST['minuman'];
+        $jumlah_minuman     = $_POST['jumlah_minuman'];
 
 ?>
 
@@ -72,9 +72,9 @@
     </tr>
     <tr>
         <td><?php echo $nasi ?></td>
-        <td><?php echo $jml_nasi ?></td>
+        <td><?php echo $jumlah_nasi ?></td>
         <td><?php echo $lauk ?></td>
-        <td><?php echo $jml_lauk ?></td>
+        <td><?php echo $jumlah_lauk ?></td>
         <td>
             <ul>
             <?php 
@@ -84,7 +84,7 @@
             ?>
             </ul>
         </td>
-        <td><?php echo $jml_minuman ?></td>
+        <td><?php echo $jumlah_minuman ?></td>
     </tr>
     
 </table>
