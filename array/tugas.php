@@ -49,9 +49,13 @@
 <br>
 <?php
 
-    $nasi = $_POST['nasi'];
-    $jml_nasi = $_POST['jumlah_nasi'];
-
+    if(isset($_POST['nasi'])){
+        $nasi       = $_POST['nasi'];
+        $jml_nasi   = $_POST['jumlah_nasi'];
+        $lauk       = $_POST['lauk'];
+        $jml_lauk   = $_POST['jumlah_lauk'];
+        $minumans    = $_POST['minuman'];
+        $jml_minuman    = $_POST['jumlah_minuman'];
 
 ?>
 
@@ -66,5 +70,23 @@
         <td>jumlah</td>
         <td>Sub Total</td>
     </tr>
+    <tr>
+        <td><?php echo $nasi ?></td>
+        <td><?php echo $jml_nasi ?></td>
+        <td><?php echo $lauk ?></td>
+        <td><?php echo $jml_lauk ?></td>
+        <td>
+            <ul>
+            <?php 
+                foreach($minumans as $minuman){
+                    echo "<li>" . $minuman . "</li>";
+                }
+            ?>
+            </ul>
+        </td>
+        <td><?php echo $jml_minuman ?></td>
+    </tr>
     
 </table>
+
+<?php } ?>
